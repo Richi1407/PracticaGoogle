@@ -47,3 +47,147 @@ nav .nav-right-section img{ /**Para que la imagen de usuario se coloque redonda 
     border-radius: 50%;
     margin-left: 10px;
    }
+
+main{
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo{ /*Para estilizar el logo de google*/
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-logo img{ /*dar dimensiones al logo*/
+    height: 92px;
+    width: 272px;
+}
+
+main .main-input{ /*Estilizar barra de busqueda*/
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{ /*Estilizar el contenedor del input*/
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input-container:hover{ /*para que el contenedor de la barra de busqueda se resalte al pasarle el cursor por encima*/
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input input{ /*Ajustar el input para que cuadre con su contenedor*/
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+main .main-input .search-icon{ /*Agregar lupa */
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .micro-icon { /*Agregar microfonito*/
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+main .main-buttons{ /*dar tamaño a los botones*/
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{ /*colocarlos dentro de un display block*/
+    display: inline-block;
+}
+
+main .main-buttons button{ /*Estilizar los botones*/
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover{ /*hover para resaltar los botones al pasarles el cursor*/
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px #000001;
+    color: #222;
+}
+/*A partir de aqui el footer*/
+footer {
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    font-size: 14px;
+    color: #5f6368;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed; /* Hace que el footer se quede en el fondo */
+    bottom: 0; /* Lo fija al fondo */
+    width: 100%; /* Ocupa todo el ancho */
+}
+
+footer .footer-top { /*Para el footer superior que dice mexico*/
+    text-align: left;
+    padding: 8px 0;
+    border-bottom: 1px solid #e4e4e4;
+    color: #70757a;
+}
+
+/*Para la parte inferior del footer, tanto izquierda como derecha*/
+footer .footer-bottom { 
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+footer .footer-left,
+footer .footer-right {
+    display: flex;
+    gap: 25px;
+}
+
+footer .footer-left{
+    position: absolute;
+    left: 20px;
+    bottom: 10px;
+}
+
+footer .footer-right{
+    position: absolute;
+    right: 50px;
+    bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #5f6368;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
